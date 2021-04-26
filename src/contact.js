@@ -1,17 +1,20 @@
 import {makeSpan, makeNavBar} from "./utilities"
-
+import { createNav } from "./navbar";
 
 function contactLoad() {
     console.log("Contact Page:")
     const content= document.querySelector('#content');
 
     //---NAVBAR---
+    /*
     const navbar = makeNavBar();
     content.appendChild(navbar);
+    */
+    createNav();
 
     //-----MAIN-----
     let main =document.createElement("div");
-    main.setAttribute("id","main-form");
+    main.setAttribute("id","main");
 
     //---INFO---
     let title= document.createElement("h1");

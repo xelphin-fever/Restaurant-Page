@@ -1,16 +1,16 @@
 import { appendChildren, makeSpan, makeImage, makeNavBar } from "./utilities"
-
+import { createNav } from "./navbar";
 
 function pageLoad() {
     console.log("Main Page:")
     const content= document.querySelector('#content');
-    //---BACKGOUND IMAGE---
-    const body= document.querySelector("body");
-    //body.style.backgroundImage="url(./images/pancakes-full.jpeg)";
 
     //---NAVBAR---
+    /*
     const navbar = makeNavBar();
     content.appendChild(navbar);
+    */
+   createNav();
 
     //---MAIN---
     let main = document.createElement('div');

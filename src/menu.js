@@ -1,13 +1,16 @@
 import { appendChildren, makeSpan, makeImage, makeNavBar } from "./utilities"
-
+import { createNav } from "./navbar";
 
 function menuLoad() {
     console.log("Menu Page:")
     const content= document.querySelector('#content');
 
     //---NAVBAR---
+    /*
     const navbar = makeNavBar();
     content.appendChild(navbar);
+    */
+    createNav();
 
     //-----MAIN-----
     let main =document.createElement("div");
