@@ -8,6 +8,10 @@ function pageLoad() {
     const body= document.querySelector("body");
     //body.style.backgroundImage="url(./images/pancakes-full.jpeg)";
 
+    //---NAVBAR---
+    const navbar = makeNavBar();
+    content.appendChild(navbar);
+
     //---MAIN---
     let main = document.createElement('div');
     main.setAttribute("id","main");

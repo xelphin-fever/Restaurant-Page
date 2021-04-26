@@ -1,7 +1,6 @@
 
 console.log("Restaurant Page");
 
-import { makeNavBar } from "./utilities"
 import { pageLoad } from "./pageLoad"
 import { menuLoad } from "./menu"
 import { contactLoad } from "./contact"
@@ -12,9 +11,8 @@ const stylesheet = document.querySelector("#stylesheet");
 //
 let content = document.querySelector("#content");
 
-//---NAVBAR---
-const navbar = makeNavBar();
-content.appendChild(navbar);
+
+
 //Tabs
 const tabs = document.querySelectorAll(".nav-links");
 console.log(tabs);
@@ -29,7 +27,6 @@ tabs.forEach((tab) => {
     tab.addEventListener("click", () => {
         let myPage = event.target.getAttribute("data-page");
         content.textContent="";
-        content.appendChild(navbar);
         if (myPage=="home"){
             console.log("Switch to Home");
             stylesheet.setAttribute("href","./style/style.css");

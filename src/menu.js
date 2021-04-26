@@ -5,6 +5,10 @@ function menuLoad() {
     console.log("Menu Page:")
     const content= document.querySelector('#content');
 
+    //---NAVBAR---
+    const navbar = makeNavBar();
+    content.appendChild(navbar);
+
     //-----MAIN-----
     let main =document.createElement("div");
     main.setAttribute("id","main");
