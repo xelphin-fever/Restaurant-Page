@@ -11,7 +11,7 @@ const stylesheet = document.querySelector("#stylesheet");
 
 //---NAVBAR---
 const navbar = makeNavBar();
-content.prepend(navbar);
+content.appendChild(navbar);
 //Tabs
 const tabs = document.querySelectorAll(".nav-links");
 console.log(tabs);
