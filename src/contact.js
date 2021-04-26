@@ -1,4 +1,4 @@
-import {makeSpan} from "./utilities"
+import {makeSpan, makeNavBar} from "./utilities"
 
 
 function contactLoad() {

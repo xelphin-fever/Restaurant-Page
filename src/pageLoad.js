@@ -1,4 +1,4 @@
-import { appendChildren, makeSpan, makeImage } from "./utilities"
+import { appendChildren, makeSpan, makeImage, makeNavBar } from "./utilities"
 
 
 function pageLoad() {
