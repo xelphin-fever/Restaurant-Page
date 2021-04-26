@@ -16,7 +16,7 @@ body{
     height:100vh;
 }
 
-#main-form{
+#main{
     background-color: var(--light-red);
     height: 500px;
     width: 800px;
